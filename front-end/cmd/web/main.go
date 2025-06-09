@@ -7,6 +7,9 @@ import (
 	"net/http"
 )
 
+// Run this code
+// Cmd: go run ./cmd/web
+
 func main() {
 	http.HandleFunc("/", func(w http.ResponseWriter, r *http.Request) {
 		render(w, "test.page.gohtml")
